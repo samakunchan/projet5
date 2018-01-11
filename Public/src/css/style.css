@@ -1,0 +1,492 @@
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+footer{
+    background-color: #343A40;
+    padding: 30px;
+    color: white;
+    bottom: 0;
+}
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=submit] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size:16px;
+}
+h1{
+    text-align: center;
+}
+.containers, .homeTitre, .homeDesc{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#rolTop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #4CAF50;
+    font-size: 10px;
+    margin: 20px;
+    padding: 10px;
+    z-index: 5;
+    border-radius: 5px;
+    display: none;
+}
+#rolTop a{
+    text-decoration: none;
+    color: white;
+}
+
+/*------------------------ Les backgrounds------------------------------*/
+.plateform{
+    background-image: url('/projet5/Public/src/images/imgjdr/tav.jpg');
+    margin: 0;
+}
+
+/*------------------------ Home Page------------------------------*/
+#homePage{
+    background-image: url('/projet5/Public/src/images/imgjdr/arbre1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+.homeTitre{
+    text-align: center;
+    padding: 15px;
+}
+
+.homeDesc{
+    background-color: black;
+    opacity:0.5;
+}
+
+.enter{
+    padding: 15%;
+}
+.enter #enterButton{
+    width: 100%;
+    border-color: #007bff;
+}
+.enter #memberButton{
+    width: 100%;
+    border-color: #69B35A;
+}
+.enter #infoButton{
+    width: 100%;
+    border-color: gold;
+}
+#enterButton:hover{
+    background-color: #007bff;
+}
+#memberButton:hover{
+    background-color: #69B35A;
+}
+#infoButton:hover{
+    background-color: gold;
+    color: aqua;
+}
+/*------------------------ Advert Page------------------------------*/
+.advertPage{
+    margin-bottom: 150px;
+}
+
+.viewComment{
+    margin-top: 15px;
+}
+.annonce{
+    background-image: url('/projet5/Public/src/images/imgjdr/page_ancienne.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 60px;
+}
+
+.annonceW{
+    background-image: url('/projet5/Public/src/images/imgjdr/page_ancienne.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 15px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 130px;
+}
+.annonceW input, .annonce input, .advertPage input, .pageShowComment input{
+    width: 100%;
+    margin-left: 0;
+}
+.advertPage h1, .annonce p, .annonce em, .viewComment p, .viewComment em, .viewCommentParty p, .viewCommentParty em{
+    font-family: 'journalregular', Arial, serif;
+    font-size: xx-large;
+}
+.viewComment{
+    box-shadow: 2px 2px 2px black;
+}
+.viewComment .auteur{
+    font-weight: bold;
+}
+.viewComment em{
+    float: right;
+}
+.comments{
+    margin-top: 20px;
+}
+.comments label{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.viewComment, .viewCommentParty, .paramater{
+    background-image: url('/projet5/Public/src/images/imgjdr/page_beige2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+/*------------------------ Register Page     ------------------------------*/
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Center the image and position the close button */
+.imgcontainers, .imgcontainers1, .imgcontainers2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatars {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
+/* The Modal (background) */
+.modals {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content Box */
+.modal-contents {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 1px black;
+}
+/* The Close Button (x) */
+.closes {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.closes:hover,.closes:focus {
+    color: red;
+    cursor: pointer;
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: 3px 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #292b2c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+.formulaire p{
+    text-align: center;
+}
+.registerPage{
+    margin-bottom: 200px;
+    background-image: url("/projet5/Public/src/images/imgjdr/page_beige2.jpg");
+    box-shadow: 1px 1px 1px black;
+    padding: 50px;
+}
+/*------------------------ Category Page       ------------------------------*/
+.aventures{
+    background-image: url("/projet5/Public/src/images/imgjdr/aventures1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.science-fiction{
+    background-image: url("/projet5/Public/src/images/imgjdr/syfy2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.manga{
+    background-image: url("/projet5/Public/src/images/imgjdr/manga3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px;
+    width: 100%;
+}
+
+.jdr{
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+}
+.categoryPage{
+    margin-bottom: 150px;
+}
+.categoryPage div, .singleCategory div{
+    margin: 15px;
+    box-shadow: 2px 2px 2px black;
+}
+.singleCategoryEmpty{
+    margin-bottom: 300px;
+}
+.singleCategoryEmpty article{
+    padding: 30px;
+}
+.science-fiction h2, .science-fiction p, .science-fiction a{
+    font-family: 'galaxy', Arial, serif;
+}
+.science-fiction p{
+     font-family: 'galaxy', Arial, serif;
+     color: white;
+     opacity: 0.8;
+}
+.aventures h2, .aventures p, .aventures a{
+    font-family: 'antiqua', Arial, serif;
+    font-weight: bold;
+}
+
+/*------------------------ Party Page       ------------------------------*/
+.partySection{
+    background-color: beige;
+    margin: 5px;
+    box-shadow: 2px 2px 2px black;
+    width: 100%;
+}
+.partySection h2{
+    box-shadow: 2px 2px 2px black;
+}
+
+.imgParty{
+    float: left;
+    margin: 10px;
+    width: 250px;
+}
+.partyContent p{
+    padding-left: 10px;
+}
+/*------------------------ Show Page       ------------------------------*/
+.pageShows{
+    background-image: url('/projet5/Public/src/images/imgjdr/taverne1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgShow{
+    width: 400px;
+}
+.sectionShow{
+    padding: 20px;
+    background-color: beige;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.pageShowIn{
+    padding: 0px;
+}
+.pageShowIn p, .pageShowIn h4{
+    color: black;
+}
+.tr td, .tr p{
+    margin-left: 20px;
+    color: blue;
+    font-weight: bold;
+}
+.pageShowComment div{
+    margin: 10px;
+}
+.viewCommentParty p{
+    margin: 10px;
+}
+.viewCommentParty em{
+    float: right;
+}
+
+/*------------------------ Member Page       ------------------------------*/
+.memberPage{
+    background-image: url('/projet5/Public/src/images/imgjdr/page_ancienne.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imageContainer{
+    width: 20%;
+    z-index: 10;
+}
+.img-responsive{
+    padding: 10px;
+    background-color: rgb(252, 225, 203);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    z-index: 10;
+}
+.dragon{
+    position: absolute;
+    top: -15px;
+    left: 35%;
+}
+.memberPage h2, .memberPage p{
+    font-family: 'journalregular', Arial, serif;
+}
+.memberPage h2{
+    font-size: 40px;
+}
+.memberPage p{
+    font-size: 20px;
+}
+.memberPage em{
+    font-size: 10px;
+}
+
+
+/*------------------------ Member Page       ------------------------------*/
+
+.pageSignal{
+    margin-bottom: 150px;
+}
+
+.btnForm {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+label{
+    margin-left: 15px;
+}
+a:hover, a:focus, a:visited{
+    text-decoration: none;
+}
+.memberPage nav{
+    padding: 30px;
+    width: 100%;
+}
+.memberPage h2 {
+    color: #8B5B35;
+}
+.status ul{
+    margin-left: 20px;
+}
+.status h2{
+    text-align: center;
+}
+.sorts{
+    background-color: #fcdc8d;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navSort{
+    width: 100%;
+}
+
+.profil, .paramater{
+    padding: 15px;
+}
+h1 em{
+    font-size: 15px;
+}
+#contenu{
+    width: 100%;
+    height: 200px;
+}
+#titre, #annonce{
+    margin: 0;
+    width: 100%;
+}
+
+.sigText{
+    color: red;
+    font-weight: bold;
+}
+.book{
+    padding: 30px;
+}
+/*------------------------ About Page       ------------------------------*/
+.aboutPage{
+    background-color: white;
+    padding: 10px;
+}
+
+.aboutPage h6, .aboutPage p{
+    font-family: "philo", Arial, serif;
+}
+.aboutPage h6{
+    color: blue;
+    font-weight: bold;
+}
+.plan1{
+    background-color: #888888;
+    box-shadow: 2px 2px 2px black;
+}
+.plan ul{
+    margin-left: 30px;
+}
+.plan div p{
+    margin-left: 30px;
+}
+.travaux{
+    margin-top: 40px;
+}
+

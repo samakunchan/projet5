@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'journalregular';
+    src: url('font/journal_regular_macroman/journal-webfont.eot');
+    src: url('font/journal_regular_macroman/journal-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/journal_regular_macroman/journal-webfont.woff') format('woff'),
+    url('font/journal_regular_macroman/journal-webfont.ttf') format('truetype'),
+    url('font/journal_regular_macroman/journal-webfont.svg#journalregular') format('svg');
+}
+
+@font-face {
+    font-family: 'galaxy';
+    src: url('font/distantgalaxy_regular_macroman/galaxy-webfont.eot');
+    src: url('font/distantgalaxy_regular_macroman/galaxy-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/distantgalaxy_regular_macroman/galaxy-webfont.woff') format('woff'),
+    url('font/distantgalaxy_regular_macroman/galaxy-webfont.ttf') format('truetype'),
+    url('font/distantgalaxy_regular_macroman/galaxy-webfont.svg#journalregular') format('svg');
+}
+
+@font-face {
+    font-family: 'antiqua';
+    src: url('font/chantelliantiqua_regular_macroman/Chantelli_Antiqua-webfont.eot');
+    src: url('font/chantelliantiqua_regular_macroman/Chantelli_Antiqua-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/chantelliantiqua_regular_macroman/Chantelli_Antiqua-webfont.woff') format('woff'),
+    url('font/chantelliantiqua_regular_macroman/Chantelli_Antiqua-webfont.ttf') format('truetype'),
+    url('font/chantelliantiqua_regular_macroman/Chantelli_Antiqua-webfont.svg#journalregular') format('svg');
+}
+@font-face {
+    font-family: 'philo';
+    src: url('font/philosopher_regular_macroman/Philosopher-Regular-webfont.eot');
+    src: url('font/philosopher_regular_macroman/Philosopher-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/philosopher_regular_macroman/Philosopher-Regular-webfont.woff') format('woff'),
+    url('font/philosopher_regular_macroman/Philosopher-Regular-webfont.ttf') format('truetype'),
+    url('font/philosopher_regular_macroman/Philosopher-Regular-webfont.svg#journalregular') format('svg');
+}

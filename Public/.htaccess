@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteRule ^home   index.php
+RewriteRule ^home   index.php?page=home
+RewriteRule ^advert-list   index.php?page=advertList
+RewriteRule ^([a-zA-Z0-9\-]+)-([0-9]+)   index.php?page=advertEdit&title=$1&id=$2
+RewriteRule ^advert-write   index.php?page=advertWrite
+RewriteRule ^advert   index.php?page=advert
+RewriteRule ^category/([0-9]+)/([a-zA-Z0-9\-]+)   index.php?page=categorySingle&id=$1&title=$2
+RewriteRule ^category-edit/([0-9]+)  index.php?page=categoryEdit&id=$1
+RewriteRule ^category-write   index.php?page=categoryWrite
+RewriteRule ^category   index.php?page=category
+RewriteRule ^register   index.php?page=register
+RewriteRule ^memberArea/([a-z]+)-([a-z]+)  index.php?page=parameter&id=$1&action=$2
+RewriteRule ^memberArea/([a-z]+)  index.php?page=memberArea&id=$1
+RewriteRule ^memberArea  index.php?page=memberArea
+RewriteRule ^admin-([a-z]+)-([0-9]+)   index.php?page=admin&select=$1&id=$2
+RewriteRule ^admin   index.php?page=admin
+RewriteRule ^propositionParty/edit/([a-zA-Z0-9\-]+)-([0-9]+)   index.php?page=propositionPartyEdit&title=$1&id=$2
+RewriteRule ^propositionParty   index.php?page=propositionParty
+RewriteRule ^party/page-([0-9]+)   index.php?page=party&p=$1
+RewriteRule ^show/([a-zA-Z0-9\-]+)-([0-9]+)  index.php?page=show&title=$1&id=$2
+RewriteRule ^comment/edit-([0-9]+)  index.php?page=commentEdit&id=$1
+RewriteRule ^signals    index.php?page=signals
+RewriteRule ^about    index.php?page=about
